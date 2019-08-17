@@ -1,0 +1,36 @@
+//
+// Fonts
+// --------------------------------------------------
+
+//
+// Font Weights
+// -------------------------
+
+// 100 = thin
+// 200 = extra-light
+// 300 = light
+// 400 = normal, book
+// 500 = medium
+// 600 = semibold, demibold
+// 700 = bold
+// 800 = heavy
+// 900 = black
+
+//
+// Font-Face Mixin
+// -------------------------
+
+@mixin font-face-modern ($font-name, $font-folder, $font-file-name, $font-weight : normal, $font-style : normal) {
+  @font-face {
+    font-family: $font-name;
+    src: url("../fonts/#{$font-folder}/#{$font-file-name}.woff2") format("woff2"), // Modern Browsers
+         url("../fonts/#{$font-folder}/#{$font-file-name}.woff") format("woff"), // Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url("../fonts/#{$font-folder}/#{$font-file-name}.ttf") format("truetype"); // Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+    font-weight: $font-weight; font-style: $font-style;
+  }
+}
+
+//
+//  Mixin Usage
+//  @include font-face-modern($fontName, $fontFolder, $fontFileName, $fontWeight: normal, $fontStyle: normal);
+//
