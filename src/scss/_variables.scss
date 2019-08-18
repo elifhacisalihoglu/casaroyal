@@ -1,0 +1,61 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+// Color system
+
+$white:    #FFF;
+$gray-100: #FAFAFA;
+$gray-200: #F3F3F3;
+$gray-300: #ECECEC;
+$gray-400: #8C8C8C;
+$gray-500: #646464;
+$gray-600: #4B4D4F;
+$gray-700: #292929;
+$gray-800: #232628;
+$gray-900: #111;
+$black:    #000;
+
+
+$royal-blue: #2A41E8;
+$orange:     #FF5F14;
+
+$primary:   $royal-blue;
+$secondary: $orange;
+
+
+// Body
+
+$body-bg:    $gray-100;
+$body-color: $gray-900;
+
+
+// Links
+
+$link-color:             $gray-900;
+$link-hover-color:       $primary;
+$link-hover-decoration:  none;
+
+// Components
+
+$border-color:  $gray-600;
+$border-radius: 0.4rem;
+
+
+// Typography
+
+$font-family-sans-serif: 'Rubik', sans-serif;
+
+$font-size-base: 0.875rem;
+$headings-color: $gray-900;
+$text-muted:     $gray-400;
+
+$h1-font-size: 3.75rem;
+$h2-font-size: 3.5rem;
+$h3-font-size: 2.625rem;
+$h4-font-size: 2.25rem;
+$h5-font-size: 1.75rem;
+
+
+$display4-size: 2.625rem;
