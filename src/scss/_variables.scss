@@ -23,7 +23,28 @@ $orange:     #FF5F14;
 
 $primary:   $royal-blue;
 $secondary: $orange;
+$light:     rgba($white, 0.30);
 
+// Spacing
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: $spacer * .25,
+    2: $spacer * .375,
+    3: $spacer * .5,
+    4: $spacer * .875,
+    5: $spacer,
+    6: $spacer * 1.25,
+    7: $spacer * 1.5,
+    8: $spacer * 1.75,
+    9: $spacer * 2,
+    10: $spacer * 2.1875,
+  ),
+  $spacers
+);
 
 // Body
 
@@ -47,9 +68,10 @@ $border-radius: 0.4rem;
 
 $font-family-sans-serif: 'Rubik', sans-serif;
 
-$font-size-base: 0.875rem;
-$headings-color: $gray-900;
-$text-muted:     $gray-400;
+$font-size-base:    0.875rem;
+$font-weight-bold:  500;
+$headings-color:    $gray-900;
+$text-muted:        $gray-400;
 
 $h1-font-size: 3.75rem;
 $h2-font-size: 3.5rem;
